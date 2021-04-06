@@ -32,6 +32,18 @@ public class Main {
             System.out.println(boys[random()].bname + rltn[random()].relationship + girls[random()].gname);
             count++;
         }
+
+        GenGirls consGname = new GenGirls();
+        GenGirls consGnameWithParameter = new GenGirls("Shantal");
+        GenBoys consBname = new GenBoys();
+        GenBoys  consBnameWithParameter = new GenBoys ("Luigi");
+        GenRelationship consRelationship = new GenRelationship();
+        GenRelationship consRelationshipWithParameter = new GenRelationship(" migo ni ");
+
+        System.out.println("Default Constructor");
+        System.out.println(consGname.gname+consRelationship.relationship+consBname.bname);
+        System.out.println("Constructor with parameters");
+        System.out.println(consGnameWithParameter.gname+consRelationshipWithParameter.relationship+consBname.bname);
     }
     public static int random(){
         Random ran = new Random();
