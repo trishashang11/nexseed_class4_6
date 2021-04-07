@@ -44,6 +44,23 @@ public class Main {
         System.out.println(consGname.gname+consRelationship.relationship+consBname.bname);
         System.out.println("Constructor with parameters");
         System.out.println(consGnameWithParameter.gname+consRelationshipWithParameter.relationship+consBname.bname);
+
+        System.out.println("\n\n");
+
+        //private modidier - create set and get method to display result to main method
+        System.out.println("display from private modifier");
+        GenGirls prg = new GenGirls();
+        GenBoys prb = new GenBoys();
+        GenRelationship pr = new GenRelationship();
+        System.out.println(prg.getGsurname()+pr.getRelationship()+prb.getBsurname());
+        System.out.println("\n");
+        //protected modifier - can access within a package
+        System.out.println("display from protected modifier");
+        System.out.println(prg.gmidname+pr.relation+prb.bmidname);
+
+
+
+
     }
     public static int random(){
         Random ran = new Random();
